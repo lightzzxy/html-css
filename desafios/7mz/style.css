@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.menu-list {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-list a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.menu-list a:hover::before {
+    width: 100%;
+    background-color: red;
+}
+
+.menu-list .drops a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+header {
+    color: #000;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-top: 29px;
+    color: #000;
+    margin: 0 10px;
+}
+
+.setemz {
+    text-align: center;
+    max-width: 10%;
+    margin: 0 auto;
+}
+
+.setemz a {
+    text-decoration: none; /* Remova a decoração de texto da âncora envolvendo a imagem */
+}
+
+.setemz a::before {
+    content: none; /* Remova o sublinhado da imagem .setemz */
+}
